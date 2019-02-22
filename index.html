@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SkyBeat</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <script type="text/javascript" src="./resources/js/skybeat.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header">
+        <h1 class="col-sm-5 col-sm-offset-1 col-xs-7 col-xs-offset-4">
+          SkyBeat
+        </h1>
+        <input
+          class="col-sm-2 col-sm-offset-0 col-xs-3 col-xs-offset-3"
+          id="search-input"
+          placeholder="Search"
+        />
+        <div class="dropdown col-sm-1 col-xs-1" id="#dropdown">
+          <a
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+          >
+            <span id="selected">Tracks</span><span class="caret"></span
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Albums</a></li>
+          </ul>
+        </div>
+        <i
+          class="fa fa-search fa-2x col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1"
+          id="search-button"
+        ></i>
+      </div>
+      <div class="row attributes" id="attributes-list"></div>
+    </div>
+    <div class="container-fluid" id="results-list"></div>
+  </body>
+</html>
