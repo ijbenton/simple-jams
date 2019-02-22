@@ -1,0 +1,23 @@
+{
+  "name": "skybeat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://ijbenton.github.io/SkyBeat/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ijbenton/SkyBeat.git"
+  },
+  "author": "ian benton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ijbenton/SkyBeat/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

@@ -200,7 +200,7 @@ skyBeat.searchTracksByTitle = title => {
 
 skyBeat.searchArtists = artist => {
   const url =
-    "http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=" +
+    "https://ws.audioscrobbler.com/2.0/?method=artist.search&artist=" +
     artist +
     "&api_key=" +
     API_KEY +
@@ -217,7 +217,7 @@ skyBeat.searchArtists = artist => {
 
 skyBeat.searchAlbums = album => {
   const url =
-    "http://ws.audioscrobbler.com/2.0/?method=album.search&album=" +
+    "https://ws.audioscrobbler.com/2.0/?method=album.search&album=" +
     album +
     "&api_key=" +
     API_KEY +
