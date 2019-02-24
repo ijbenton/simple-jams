@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://ijbenton.github.io/SkyBeat/",
+  "homepage": "https://ijbenton.github.io/SimpleJams/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ijbenton/SkyBeat.git"
+    "url": "git+https://github.com/ijbenton/SimpleJams.git"
   },
   "author": "ian benton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ijbenton/SkyBeat/issues"
+    "url": "https://github.com/ijbenton/SimpleJams/issues"
   },
   "dependencies": {
     "gh-pages": "^2.0.1"

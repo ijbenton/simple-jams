@@ -18,6 +18,11 @@ a:focus {
   text-decoration: none;
 }
 
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
 .header {
   padding: 2.75rem 0;
   background-color: #339af0;
@@ -26,7 +31,7 @@ a:focus {
 .header h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: "Coiny", cursive;
   color: #fff;
 }
@@ -85,21 +90,37 @@ a:focus {
   padding-right: 0.5rem;
 }
 
-@media only screen and (max-width: 635px) {
-  .header {
-    width: 100%;
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
   }
 
+  body {
+    line-height: 2;
+  }
+
+  .attributes {
+    font-size: 0.8rem;
+  }
+
+  .result {
+    font-size: 0.9rem;
+  }
   .header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
   }
 
-  .header input {
-    width: 20%;
+  body {
+    line-height: 2;
   }
-  .header #dropdown {
-    width: 15%;
-  }
-  .header #search-button {
-    width: 15%;
+
+  .attributes {
+    font-size: 0.85rem;
   }
 }
