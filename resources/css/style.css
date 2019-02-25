@@ -18,11 +18,6 @@ a:focus {
   text-decoration: none;
 }
 
-.col-centered {
-  float: none;
-  margin: 0 auto;
-}
-
 .header {
   padding: 2.75rem 0;
   background-color: #339af0;
@@ -100,11 +95,12 @@ a:focus {
   }
 
   .attributes {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 100;
   }
 
   .result {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .header h1 {
     font-size: 2.5rem;
@@ -118,9 +114,5 @@ a:focus {
 
   body {
     line-height: 2;
-  }
-
-  .attributes {
-    font-size: 0.85rem;
   }
 }

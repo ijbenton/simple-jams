@@ -76,9 +76,9 @@ skyBeat.renderResults = results => {
     htmlAttributesRow.innerHTML =
       '  <div class="col-xs-1 col-xs-offset-1 attribute">LastFM</div>' +
       ' <div class="col-xs-3 col-xs-offset-1 attribute">Song</div> ' +
-      '  <div class="col-xs-2 attribute">Artist</div>  ' +
-      '  <div class="col-xs-2 attribute">Album Art</div>   ' +
-      '    <div class="col-xs-2 attribute">Listeners</div>';
+      '  <div class="col-xs-2 col-xs-offset-0 attribute">Artist</div>  ' +
+      '  <div class="col-xs-2 col-xs-offset-0 attribute">Album Art</div>   ' +
+      '    <div class="col-xs-2 col-xs-offset-0 attribute">Listeners</div>';
 
     attributesList.appendChild(htmlAttributesRow);
 
@@ -98,13 +98,13 @@ skyBeat.renderResults = results => {
         '  <div class="col-xs-3 col-xs-offset-1">' +
         track.name +
         "</div>" +
-        '  <div class="col-xs-2">' +
+        '  <div class="col-xs-2 col-xs-offset-0">' +
         track.artist +
         "</div>" +
-        '  <div class="col-xs-2"><img src="' +
+        '  <div class="col-xs-2 col-xs-offset-0"><img src="' +
         albumArtMedium +
         '"/></div>' +
-        '  <div class="col-xs-2">' +
+        '  <div class="col-xs-2 col-xs-offset-0">' +
         numberWithCommas(track.listeners);
       +"</div>";
 
