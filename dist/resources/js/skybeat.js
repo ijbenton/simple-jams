@@ -74,11 +74,10 @@ skyBeat.renderResults = results => {
 
   if (searchFilter == "Tracks") {
     htmlAttributesRow.innerHTML =
-      '  <div class="col-xs-1 col-xs-offset-1 attribute">LastFM</div>' +
-      ' <div class="col-xs-3 col-xs-offset-1 attribute">Song</div> ' +
-      '  <div class="col-xs-2 attribute">Artist</div>  ' +
-      '  <div class="col-xs-2 attribute">Album Art</div>   ' +
-      '    <div class="col-xs-2 attribute">Listeners</div>';
+      ' <div class="col-xs-3 col-xs-offset-1 col-sm-4 col-sm-offset-2 attribute">Song</div> ' +
+      '  <div class="col-xs-2 col-sm-2 attribute">Artist</div>  ' +
+      '  <div class="col-xs-3 col-sm-2 attribute">Album Art</div>   ' +
+      '    <div class="col-xs-3 col-sm-2 attribute">Listeners</div>';
 
     attributesList.appendChild(htmlAttributesRow);
 
@@ -88,23 +87,23 @@ skyBeat.renderResults = results => {
       var htmlTrackRow = document.createElement("div");
       htmlTrackRow.className = "row result";
       htmlTrackRow.innerHTML =
-        '  <div class="col-xs-1 col-xs-offset-1 play-button">' +
+        '  <div class="col-xs-1 col-sm-1 col-sm-offset-1 play-button">' +
         '    <a href="' +
         track.url +
         '" target="_blank">' +
         '      <i class="far fa-play-circle fa-2x"></i>' +
         "    </a>" +
         "  </div>" +
-        '  <div class="col-xs-3 col-xs-offset-1">' +
+        '  <div class="col-xs-3 col-sm-4">' +
         track.name +
         "</div>" +
-        '  <div class="col-xs-2">' +
+        '  <div class="col-xs-2 col-sm-2">' +
         track.artist +
         "</div>" +
-        '  <div class="col-xs-2"><img src="' +
+        '  <div class="col-xs-3 col-sm-2"><img src="' +
         albumArtMedium +
         '"/></div>' +
-        '  <div class="col-xs-2">' +
+        '  <div class="col-xs-3 col-sm-2">' +
         numberWithCommas(track.listeners);
       +"</div>";
 
@@ -112,10 +111,9 @@ skyBeat.renderResults = results => {
     }
   } else if (searchFilter == "Artists") {
     htmlAttributesRow.innerHTML =
-      '  <div class="col-xs-1 col-xs-offset-1 attribute">LastFM</div>' +
-      ' <div class="col-xs-3 col-xs-offset-1 attribute">Artist</div> ' +
-      '  <div class="col-xs-2 col-xs-offset-1 attribute">Album Art</div>   ' +
-      '    <div class="col-xs-2 col-xs-offset-1 attribute">Listeners</div>';
+      '  <div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2 attribute">Artist</div>  ' +
+      '  <div class="col-xs-4 col-sm-3 attribute">Album Art</div>   ' +
+      '    <div class="col-xs-3 col-sm-3 attribute">Listeners</div>';
 
     attributesList.appendChild(htmlAttributesRow);
 
@@ -125,20 +123,20 @@ skyBeat.renderResults = results => {
       var htmlArtistRow = document.createElement("div");
       htmlArtistRow.className = "row result";
       htmlArtistRow.innerHTML =
-        '  <div class="col-xs-1 col-xs-offset-1 play-button">' +
+        '  <div class="col-xs-1 col-sm-1 col-sm-offset-1 play-button">' +
         '    <a href="' +
         artist.url +
         '" target="_blank">' +
         '      <i class="far fa-play-circle fa-2x"></i>' +
         "    </a>" +
         "  </div>" +
-        '  <div class="col-xs-3 col-xs-offset-1">' +
+        '  <div class="col-xs-4 col-sm-4">' +
         artist.name +
         "</div>" +
-        '  <div class="col-xs-2 col-xs-offset-1"><img src="' +
+        '  <div class="col-xs-4 col-sm-3 "><img src="' +
         albumArtMedium +
         '"/></div>' +
-        '  <div class="col-xs-2 col-xs-offset-1">' +
+        '  <div class="col-xs-3 col-sm-3">' +
         numberWithCommas(artist.listeners);
       +"</div>";
 
@@ -146,10 +144,9 @@ skyBeat.renderResults = results => {
     }
   } else if (searchFilter == "Albums") {
     htmlAttributesRow.innerHTML =
-      '  <div class="col-xs-1 col-xs-offset-1 attribute">LastFM</div>' +
-      ' <div class="col-xs-3 col-xs-offset-1 attribute">Album</div> ' +
-      '  <div class="col-xs-2 col-xs-offset-1 attribute">Artist</div>   ' +
-      '    <div class="col-xs-2 col-xs-offset-1 attribute">Album Art</div>';
+      ' <div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2 attribute">Album</div> ' +
+      '  <div class="col-xs-4 col-sm-3 attribute">Artist</div>   ' +
+      '    <div class="col-xs-3 col-sm-3 attribute">Album Art</div>';
 
     attributesList.appendChild(htmlAttributesRow);
 
@@ -159,20 +156,20 @@ skyBeat.renderResults = results => {
       var htmlAlbumRow = document.createElement("div");
       htmlAlbumRow.className = "row result";
       htmlAlbumRow.innerHTML =
-        '  <div class="col-xs-1 col-xs-offset-1 play-button">' +
+        '  <div class="col-xs-1 col-sm-1 col-sm-offset-1 play-button">' +
         '    <a href="' +
         album.url +
         '" target="_blank">' +
         '      <i class="far fa-play-circle fa-2x"></i>' +
         "    </a>" +
         "  </div>" +
-        '  <div class="col-xs-3 col-xs-offset-1">' +
+        '  <div class="col-xs-4 col-sm-4">' +
         album.name +
         "</div>" +
-        '  <div class="col-xs-2 col-xs-offset-1">' +
+        '  <div class="col-xs-4 col-sm-3">' +
         album.artist +
         "</div>" +
-        '  <div class="col-xs-2 col-xs-offset-1"><img src="' +
+        '  <div class="col-xs-3 col-sm-3"><img src="' +
         albumArtMedium +
         '"/></div>';
 
