@@ -86,10 +86,7 @@ a:focus {
 }
 
 @media only screen and (max-width: 480px) {
-  .attributes {
-    font-size: 0.65rem;
-  }
-
+  .attributes,
   .result {
     font-size: 0.7rem;
   }
