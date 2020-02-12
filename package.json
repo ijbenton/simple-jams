@@ -18,6 +18,6 @@
     "url": "https://github.com/ijbenton/simple-jams/issues"
   },
   "dependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.2.0"
   }
 }
