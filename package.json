@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://ijbenton.github.io/SimpleJams/",
+  "homepage": "https://ijbenton.github.io/simple-jams/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ijbenton/SimpleJams.git"
+    "url": "git+https://github.com/ijbenton/simple-jams.git"
   },
   "author": "ian benton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ijbenton/SimpleJams/issues"
+    "url": "https://github.com/ijbenton/simple-jams/issues"
   },
   "dependencies": {
     "gh-pages": "^2.0.1"
